@@ -1,3 +1,33 @@
+### Caching the Inverse of a matrix
+
+Calculate the inverse of a matrix, but first check to see if this has already been done by checking the cache.
+
+makeCacheMatrix   takes an argument in the form of a matrix and returns a vector of functions to work on that matrix: set, get, setinv and getinv
+cacheSolve  takes the vector from makeCacheMatrix and (1) attemps to lookup the already inverted matrix or (2)to calculate the inverse of the matrix.  
+If it is calculating the inverse of the matrix for the first time, then store the inverse matrix back in the cache.
+
+
+Example usage:
+Create a matrix:
+
+z <- sample(1:16,16)
+
+Create the vector
+x <- makeCacheMatrix(z)
+
+Solve the matrix or lookup in cache:
+cacheSolve(x)
+
+
+
+
+
+
+
+
+
+### Original README.md follows
+
 ### Introduction
 
 This second programming assignment will require you to write an R
